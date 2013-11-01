@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# rbenv Setup
+# -----------
+# This setups rbenv and adds the rbenv shims to your $PATH.
+# Make sure you call this at the right point into your .bash_profile to ensure that rbenv is called
+# at the right time in your $PATH, particularly if you rely on a system-installed ruby version to
+# be in your path.
+
+# Set up rbenv
+eval "$(rbenv init -)"

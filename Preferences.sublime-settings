@@ -1,0 +1,55 @@
+{
+
+	// This should be symlink'd or copied into ~/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings
+	// You can make a syntax (language) specific file in /Packages/User/<syntax>.sublime-settings
+
+	"use_simple_full_screen": true,				// Don't use Lion or Mountain Lion fullscreen mode
+	"rulers": [100],							// Set a ruler at 100px (where you would want to wrap)
+
+	"bold_folder_labels": true,					// Bold folders to make it easier to distinguish
+	"highlight_modified_tabs": true,			// Make it easier to see modified tabs
+	"highlight_line": true,						// Tint the current line background
+
+	"tab_size": 4,								// Default: Tab size is 4
+	"translate_tabs_to_spaces": false,			// Default: Tabs instead of spaces
+
+	"word_wrap": true,							// Set word wrap
+	"font_face": "Inconsolata",					// Set the font to Inconsolata
+	"font_size": 14,							// Set the font size to 14pt
+	"font_options":								// Set the font options
+	[
+		"no_bold",
+		"subpixel_alias"
+	],
+
+	"draw_white_space": "all",					// Display whitespace
+	"trim_trailing_white_space_on_save": true,	// Remove any whitespace when you save a file
+
+	"file_exclude_patterns":					// Ignore files
+	[
+		".DS_Store"
+	],
+	"folder_exclude_patterns":					// Ignore folders
+	[
+		".git"
+	],
+
+	// PACKAGE CONTROL SETTINGS
+	// Will only work if correct packages are installed
+
+	// Word Count
+	"enable_live_count": true,
+
+	// Flatland Theme
+	"theme": "Flatland Dark.sublime-theme",
+	"flatland_square_tabs": true, 				// Square file tabs instead of rounded corners
+	"color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",	// Monokai color scheme (SublimeText's default) with Flatland background color
+	//"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",	// Flatland dark color scheme
+ 	"flatland_sidebar_tree_small" : true,		// Ability to change row height of sidebar tree. Options: xsmall, small, medium, large, xlarge
+
+ 	// Disable Packages - Packages that are causing problems
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}

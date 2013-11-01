@@ -1,0 +1,5 @@
+dns-resolution: yes
+port-resolution: yes
+show-bars: yes
+show-totals: yes
+use-bytes: yes

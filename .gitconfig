@@ -1,0 +1,19 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+[user]
+	name = #insert the commit author name here
+	email = #insert your commit email here
+[credential]
+	helper = osxkeychain
+[include]
+	path = .githubconfig
+	path = .gitaliasconfig
+[push]
+	#default = nothing #be really *really* conservative
+	default = upstream #be really conservative
+[help]
+	autocorrect = 1

@@ -1,0 +1,11 @@
+[alias]
+  hist = log --pretty=format:\"%C(yellow)%h%Creset %ad |%C(blue)%d%Creset %s [%C(green)%an%Creset]\" --graph --date=short
+  br = branch -a
+  st = status
+  co = checkout
+  dom = diff origin/master
+  l = log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset'
+  lb = log --graph --simplify-by-decoration --pretty=format:'%d' --all
+  ignore = update-index --assume-unchanged
+  unignore = update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep "^[[:lower:]]"

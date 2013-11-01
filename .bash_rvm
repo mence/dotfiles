@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Default RVM configuration
+# -------------------------
+# If you run into issues with a particular RVM ruby in a directory and want to use the system ruby
+# you can explictly call `rvm use system` as one of the last calls in your .bash_profile as well as
+# creating a function for a particular directory you want to `cd` into:
+# some_directory_i_want_to_cd_into() {
+# 	rvm use system
+# 	cd some_directory_i_want_to_cd_into
+# }
+# This works best in combination with explictly setting the RVM ruby want for specific projects in
+# a `.ruby-version` file in your project's directory
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Load and unload RVM if you are using it
+# function load_rvm() {
+# 	# Check if rvm is loaded
+# 	if [[ -z "$rvm_prefix" ]]; then
+# 		echo "Loading RVM..."
+# 		[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# 	else
+# 		echo "RVM already loaded"
+# 	fi
+# }
+
+# function unload_rvm() {
+# 	# Check if rvm is loaded
+# 	if [[ -n "$rvm_prefix" ]]; then
+# 		echo "Unloading RVM..."
+# 		__rvm_unload
+
+# 		# RVM unloads this option, need to reset it
+# 		# export JRUBY_OPTS=--1.8 # If you're using JRuby
+
+# 		# Have to cheat and reload these functions
+# 		source "${BASH_SOURCE[0]}"
+# 	else
+# 		echo "RVM not loaded"
+# 	fi
+# }

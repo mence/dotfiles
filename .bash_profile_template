@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Bash Profile Template
+# ---------------------
+# Copy this into your $HOME (`~`) directory and source specific
+# project files as you need.
+#
+# Assumes you store your .dotfiles in '~/.dotfiles'
+
+source ~/.dotfiles/.bashrc

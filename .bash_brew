@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Homebrew
+# --------
+
+# Brew support
+alias cellar="cd /usr/local/Cellar"
+
+# Homebrew fixes
+alias fixbrew='sudo chown -R $USER /usr/local'
+
+# Brew Installs
+# -------------
+
+# Node.js
+export NODE_PATH=/usr/local/lib/node_modules
+export NPM_PATH=/usr/local/lib/node_modules/npm/bin
+export PATH=$PATH:$NODE_PATH:$NPM_PATH
+
+#wget
+alias wget='wget -c' # allows continuing of an existing wget download
+
+# bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+ . $(brew --prefix)/etc/bash_completion
+fi
+
+# htop
+# Make top work better
+alias topold='/usr/bin/top -o cpu' #top sorted by cpu usage (descending)
+alias top='htop'
+
+# iftop
+# Use iftop to view network traffic
+alias iftop_wifi='sudo iftop -i en0'
+alias iftop_lan='sudo iftop -i lo1'
+
