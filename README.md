@@ -7,7 +7,7 @@ are useful for cleaning up my personal shell.
 Used For
 --------
 
-* [bash](http://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell
+* bash shell
 * [git](http://git-scm.com/) configuration, including:
   * [GitHub](https://github.com) configuration
 * [iftop](http://www.ex-parrot.com/pdw/iftop/) configuration
