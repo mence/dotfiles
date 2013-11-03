@@ -13,7 +13,10 @@
 	path = .githubconfig
 	path = .gitaliasconfig
 [push]
+	#Set push.default. This is confusing.
+	#It's best to read the docs here: http://git-scm.com/docs/git-config
 	#default = nothing #be really *really* conservative
-	default = upstream #be really conservative
+	#default = upstream #be conservative
+	default = simple #default in git 2.0, be really conservative
 [help]
 	autocorrect = 1
