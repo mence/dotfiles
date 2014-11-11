@@ -75,7 +75,6 @@ alias gla='gl --all'
 alias fp='git fetch --all --prune --verbose && git pull --rebase --verbose' #Fetch everything while removing old branches; Pull with rebase
 alias gf='git fetch --all --prune --verbose'
 alias gff='git fetch --all --verbose --ff-only' #fetch and move your current branch's changes to the tip of the latest
-alias go='git checkout'
 alias gdiff='git diff' # use git diff instead of system diff
 alias gbr='git branch -a' # show all git branches, including remotes
 
